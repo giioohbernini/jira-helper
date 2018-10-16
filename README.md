@@ -1,21 +1,21 @@
-# EasyDownload
+# Jira Helpers
 
 ## Supported sites
 
-* [Netcine](https://netcine.tv/)
+* [Jira](https://www.atlassian.com/software/jira)
 
 ## Setup
 
 Install dependencies:
 
 ```
-npm install
+yarn install
 ```
 
 Compile scripts and styles:
 
 ```
-npm start
+yarn start
 ```
 
 ## Testing
@@ -38,7 +38,7 @@ npm start
 
 ## Links 
 
-- [Chrome](https://chrome.google.com/webstore/detail/easy-download/gaenbffklkagiabfmojembkmeaheeaco?hl=pt-BR&authuser=1)
+- [Chrome](https://chrome.google.com/webstore/detail/dkhmnajapcadldgnjdbmddkckcodbiji/publish-accepted?authuser=0&hl=pt-BR)
 
-- [Firefox](https://addons.mozilla.org/en-US/firefox/addon/easy-download/) 
+- Firefox not yet :/
 
