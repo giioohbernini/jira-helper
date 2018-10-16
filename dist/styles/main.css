@@ -1,0 +1,39 @@
+.easydownload-box {
+  width: 400px;
+  background: #4c4c4c;
+  position: absolute;
+  height: 400px;
+  left: calc(50% - 200px);
+  top: calc(50% - 200px);
+  z-index: 999; }
+
+.easydownload-closebtn {
+  position: absolute;
+  right: 0;
+  margin: 0.5em; }
+  .easydownload-closebtn > button {
+    font-size: 25px;
+    background-color: #00ffbc;
+    border: none;
+    padding: 2px 11px;
+    color: #4c4c4c;
+    border-radius: 20px;
+    box-shadow: 0px 0px 0px 0px;
+    cursor: pointer; }
+
+.easydownload-boxcontent {
+  padding: 4em 2em 2em 2em;
+  text-align: center; }
+
+.easydownload-buttons {
+  margin-top: 7em; }
+  .easydownload-buttons > a {
+    text-decoration: none;
+    font-size: 19px;
+    border: none;
+    padding: 5px;
+    margin: 5px;
+    box-shadow: 0px 0px 0px 0px #000000;
+    color: #4c4c4c;
+    border-radius: 4px;
+    background-color: #00ffbc; }

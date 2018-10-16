@@ -1,0 +1,37 @@
+{
+  "name": "jiraHelper",
+  "version": "0.0.1",
+  "description": "Don't count story points any more",
+  "main": "src/scripts/main.js",
+  "repository": "giioohbernini/jiraHelper",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-plugin-array-includes": "^2.0.3",
+    "babel-plugin-css-modules-transform": "1.2.7",
+    "babel-plugin-provide-modules": "1.0.3",
+    "babel-plugin-system-import-transformer": "3.1.0",
+    "babel-plugin-transform-array-find": "^1.0.0",
+    "babel-plugin-transform-object-assign": "^6.22.0",
+    "babel-plugin-transform-object-rest-spread": "6.20.2",
+    "babel-plugin-transform-react-inline-elements": "6.8.0",
+    "babel-polyfill": "6.20.0",
+    "babel-preset-es2015": "6.9.0",
+    "babelify": "7.3.0",
+    "browserify": "13.0.1",
+    "onchange": "2.4.0",
+    "parallelshell": "3.0.2",
+    "watchify": "3.7.0"
+  },
+  "scripts": {
+    "start": "yarn build",
+    "build": "yarn build:scripts",
+    "build:scripts": "browserify src/scripts/jira-helper.js -t [ babelify --presets es2015 ] -o dist/scripts/jira-helper.js",
+    "watch": "parallelshell 'npm run watch:scripts' 'yarn watch:styles'",
+    "watch:scripts": "onchange 'src/scripts/*.js' -- yarn build:scripts",
+    "watch:styles": "onchange 'src/styles/*.scss' -- yarn build:styles",
+    "package": "yarn package:blink && npm run package:gecko",
+    "package:blink": "cd dist && zip -r ../easydownload.zip * && cd ..",
+    "package:gecko": "cd dist && zip -r ../easydownload.xpi * && cd .."
+  }
+}
